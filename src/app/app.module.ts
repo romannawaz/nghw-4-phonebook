@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { PhoneBookComponent } from './phone-book/phone-book.component';
+import { SearchPipe } from './phone-book/search.pipe';
+import { SortPipe } from './phone-book/sort.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhoneBookComponent,
+    SearchPipe,
+    SortPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
